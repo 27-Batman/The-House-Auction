@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100%; 
+    height: 100vh; 
+    position: fixed;
+    flex-grow: 1;
+}
+
+.top-left {
+    width: 300px;
+    height: 100%; 
+    background-color: #FDFBD4; 
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: absolute;
+    font-weight: bold;
+    font-size: 34px;
+    margin-top: 2%; 
+    margin-left: 200%;
+    padding: 0 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: absolute; 
+    z-index: 3;
+    width: calc(100% - 300px);
+    height: 100vh;
+    margin-left: 9.8%;
+    top: 0;
+}
+
+.image h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    color: black;
+    z-index: 2; 
+    margin: 0;
+    font-size: 100px; 
+    left: -11%;
+}
+
+.top-right {
+    width: calc(100% - 50px); 
+    height: 560px; 
+    background-color: #7d6d9f; 
+    position: absolute; 
+    left: 50px; 
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 6%; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #7b7b78;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 10px;
+    min-width: 200px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #7b7b78;
+    color: #ccc;
+    font-size: 14px;
+    width: 100%;
+    position: relative;  /* Changed from absolute */
+    bottom: 10%;
+    margin-top: 10px;   /* Adds some space above */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #7b7b78;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    margin-top: 60%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 10px;
+    min-width: 200px;
+    font-size: 14px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
